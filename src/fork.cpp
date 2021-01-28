@@ -41,11 +41,13 @@ int main() {
         exit(-1);
     } else if (pid == 0) {
         intermediateNode("child 1", "grandchild 1", 12, 18, 18, fathersBirth);
+        exit(0);
     } else {
         sleep(2);
         fathersAge(fathersBirth); // 16
 
         firstNode("father", "child 2", "grandchild 2", 14, 12, 44, 16, fathersBirth);
+        exit(1);
     }
 }
 
@@ -79,6 +81,7 @@ void firstNode(const std::string &parentNode, const std::string &nodeName, const
         exit(-1);
     } else if (pid == 0) {
         intermediateNode(nodeName, childName, childBirthTime, childTTL, nodeTTL, parentBirth);
+        exit(0);
     } else {
         // father
         sleep(parentTTL);
@@ -105,7 +108,6 @@ void intermediateNode(const std::string &nodeName, const std::string &childName,
         exit(-1);
     } else if (pid == 0) {
         lastNode(childName, childTTL);
-
         exit(0);
     } else {
         sleep(nodeTTL);
