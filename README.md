@@ -1,6 +1,21 @@
 # fork
 Implementaçao de uma árvore de processos utilizando commandos FORK.
 
+### Descrição
+
+* Trabalho em dupla;
+* Implementação em C/C++;
+* Submeter via sigaa:
+* Código completo;
+* Vídeo do código em execução. Caso não seja possível enviar via sigaa, enviar link aberto para visualização em outra plataforma;
+* Todos os passos necessários para compilar e executar o código, como Sistema Operacional, versão do compilador, commando complete de compilação e execução, etc.
+* Terá nota 0.0 (zero) os alunos que:
+* Não enviarem qualquer um dos itens listados anteriormente;
+* Cometer plágio;
+* Submeter o trabalho em horário não estipulado;
+* Submeter o trabalho através de outro meio que não o SIGAA.
+* Qualquer mudança será previamente informado aos alunos através do SIGAA.
+
 ### implementação
 
 ![image](https://github.com/inuyVessalius/fork/blob/main/Untitled.png)
