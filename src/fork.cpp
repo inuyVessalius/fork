@@ -26,6 +26,8 @@ std::string timeToStr(std::time_t *t) {
 }
 
 int main() {
+    // father
+
     auto fathersBirth = std::chrono::system_clock::now();
     std::time_t fathersBirthTime = std::chrono::system_clock::to_time_t(fathersBirth);
     std::cout << "+ fathers birth: " << timeToStr(&fathersBirthTime) << '\n';
@@ -39,6 +41,8 @@ int main() {
         std::cout << "error when creating child 1\n";
         exit(-1);
     } else if (fatherPid == 0) {
+        // son 1
+
         auto son1Birth = std::chrono::system_clock::now();
         std::time_t son1BirthTime = std::chrono::system_clock::to_time_t(son1Birth);
         std::cout << "+ son 1 birth: " << timeToStr(&son1BirthTime) << '\n';
@@ -52,6 +56,8 @@ int main() {
             std::cout << "error when creating grandchild 1\n";
             exit(-1);
         } else if (son1Pid == 0) {
+            // grandchild 1
+
             auto gc1Birth = std::chrono::system_clock::now();
             std::time_t gc1BirthTime = std::chrono::system_clock::to_time_t(gc1Birth);
             std::cout << "+ grandchild 1 birth: " << timeToStr(&gc1BirthTime) << '\n';
@@ -67,6 +73,7 @@ int main() {
 
             exit(0);
         } else {
+            // son 1
             sleep(18);  // son 1 has 30
 
             auto son1Death = std::chrono::system_clock::now();
@@ -89,6 +96,7 @@ int main() {
             std::cout << "error when creating son 2\n";
             exit(-1);
         } else if (son2Pid == 0) {
+            // son 2
             auto son2Birth = std::chrono::system_clock::now();
             std::time_t son2BirthTime = std::chrono::system_clock::to_time_t(son2Birth);
             std::cout << "+ son 2 birth: " << timeToStr(&son2BirthTime) << '\n';
@@ -103,6 +111,8 @@ int main() {
                 std::cout << "error when creating grandchild 2\n";
                 exit(-1);
             } else if (gc2Pid == 0) {
+                // grandchild 2
+
                 auto gc2Birth = std::chrono::system_clock::now();
                 std::time_t gc2BirthTime = std::chrono::system_clock::to_time_t(gc2Birth);
                 std::cout << "+ grandchild 2 birth: " << timeToStr(&gc2BirthTime) << '\n';
@@ -118,6 +128,7 @@ int main() {
 
                 exit(0);
             } else {
+                // son 2
                 sleep(16);   // son 2 has 30
 
                 auto son2Death = std::chrono::system_clock::now();
