@@ -2,6 +2,9 @@
 Implementaçao de uma árvore de processos utilizando commandos FORK.
 
 ### implementação
+
+![alt text](https://github.com/inuyVessalius/fokr/blob/master/untitled.png?raw=true)
+
 Nesta implementação, você deve considerar:
 * 1 ano corresponde a 1 segundo;
 * O pai morre aos 60 anos;
