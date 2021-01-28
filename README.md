@@ -3,7 +3,7 @@ Implementaçao de uma árvore de processos utilizando commandos FORK.
 
 ### implementação
 
-![alt text](https://github.com/inuyVessalius/fokr/blob/master/untitled.png?raw=true)
+![image](https://github.com/inuyVessalius/fork/blob/main/Untitled.png)
 
 Nesta implementação, você deve considerar:
 * 1 ano corresponde a 1 segundo;
