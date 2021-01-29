@@ -121,6 +121,7 @@ void kill(const std::string &nodeName, const std::chrono::time_point<std::chrono
     std::chrono::duration<double> elapsed_seconds = death - birth;
 
     std::cout << "- " << nodeName << " died: " << timeToStr(death)
+              << " --- " << nodeName << " was born: " << timeToStr(birth)
               << " --- " << nodeName << " lived: " << int(elapsed_seconds.count()) << "s\n";
 }
 
